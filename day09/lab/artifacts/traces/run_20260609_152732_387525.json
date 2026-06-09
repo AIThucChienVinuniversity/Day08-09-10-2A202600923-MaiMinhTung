@@ -1,0 +1,33 @@
+{
+  "run_id": "run_20260609_152732_387525",
+  "task": "ERR-403-AUTH là lỗi gì và cách xử lý?",
+  "supervisor_route": "retrieval_worker",
+  "route_reason": "unknown ERR code + risk_high → human_review | human approved → retrieval_worker",
+  "workers_called": [
+    "human_review",
+    "retrieval_worker",
+    "synthesis_worker"
+  ],
+  "mcp_tools_used": [],
+  "retrieved_sources": [
+    "it_helpdesk_faq.txt",
+    "policy_refund_v4.txt",
+    "sla_p1_2026.txt"
+  ],
+  "final_answer": "Dựa trên các tài liệu tìm được:\n[1] IT HELPDESK FAQ — CÂU HỎI THƯỜNG GẶP Source: support/helpdesk-faq.md Department: IT Effective Date: 2026-01-20 Access: internal  === Section 1: Tài khoản và mật khẩu ===  Q: Tôi quên mật khẩu, phải làm gì? A: Truy cập https://sso.company.internal/reset hoặc liên hệ Helpdesk qua ext. 9000. Mật khẩu mới sẽ được gửi qua email công ty trong vòng 5 phút... (Nguồn: it_helpdesk_faq.txt)\n[2] CHÍNH SÁCH HOÀN TIỀN - PHIÊN BẢN 4 Source: policy/refund-v4.pdf Department: CS Effective Date: 2026-02-01 Access: internal  === Điều 1: Phạm vi áp dụng === Chính sách này áp dụng cho tất cả các đơn hàng được đặt trên hệ thống nội bộ kể từ ngày 01/02/2026. Các đơn hàng đặt trước ngày có hiệu lực sẽ áp dụng theo chính sách hoàn tiền phiên bản 3.  ===... (Nguồn: policy_refund_v4.txt)\n[3] SLA TICKET - QUY ĐỊNH XỬ LÝ SỰ CỐ Source: support/sla-p1-2026.pdf Department: IT Effective Date: 2026-01-15 Access: internal  === Phần 1: Định nghĩa mức độ ưu tiên ===  P1 — CRITICAL (Khẩn cấp): Định nghĩa: Sự cố ảnh hưởng toàn bộ hệ thống production, không có workaround. Ví dụ: Database sập, API gateway down, toàn bộ người dùng không thể đăng nhập... (Nguồn: sla_p1_2026.txt)",
+  "confidence": 0.75,
+  "hitl_triggered": true,
+  "latency_ms": 0,
+  "timestamp": "2026-06-09T15:27:32.387519",
+  "history": [
+    "[supervisor] received task: ERR-403-AUTH là lỗi gì và cách xử lý?",
+    "[supervisor] route=human_review; needs_tool=False; risk_high=True; reason=unknown ERR code + risk_high → human_review",
+    "[human_review] HITL triggered",
+    "[human_review] auto-approved in lab mode",
+    "[retrieval_worker] called",
+    "[retrieval_worker] retrieved 3 chunks",
+    "[synthesis_worker] called",
+    "[synthesis_worker] answer generated; confidence=0.75",
+    "[graph] completed in 0ms"
+  ]
+}
